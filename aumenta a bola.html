@@ -1,0 +1,15 @@
+function setup() {
+  createCanvas(720, 400);
+  background(230);
+  strokeWeight(1);
+}
+
+function draw() {
+  if (mouseIsPressed) {
+    stroke("blue");
+  } else {
+    stroke("red");
+  }
+  circle(mouseX - 66, mouseY, mouseX + 66, mouseY);
+}
+
